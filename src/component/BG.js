@@ -41,22 +41,26 @@ const bali={
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
 };
-// const myStyle={
-//   backgroundImage:"url('./img/Switzerland.jpg')",
-//   height:'500px',
-//   width:'500px',
-//   marginTop:'-70px',
-//   fontSize:'30px',
-//   padding:'200px',
-//   backgroundSize: 'cover',
-//   backgroundRepeat: 'no-repeat',
-// };
+
+
+//  const imgs=[{img:"img/6.jpg"},{img:"img/aki.jpg"},{img:"img/Bali.jpg"}]
+
+            
+
 
   return (
     <div>
+      {/* <div className='flex'>
+      {(imgs).map((i)=>
+             <div className="" >
+               <img className='w-[400px] h-[400px] ' src={i.img} alt="" />
+             </div>
+               )}
+      </div> */}
+     
       <div className='flex gap-10 m-10'>
-       <div className='hover:translate-y-[-40px] duration-500 rounded cursor-pointer' style={myStyle}>
-          {/* <h1> Switzerland </h1> */}
+       <div className='hover:translate-y-[-40px] duration-500 rounded cursor-pointer bg-slate-800 ' style={myStyle}>
+          <h1> Switzerland </h1>
         </div>
         <div className='hover:translate-y-[-40px] duration-500 rounded cursor-pointer' style={aki}>
           <h1> Switzerland </h1>
@@ -68,6 +72,8 @@ const bali={
           <h1> Switzerland </h1>
         </div>
       </div>
+
+      
        
       
     </div>

@@ -7,11 +7,13 @@ import "react-datepicker/dist/react-datepicker.css";
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';  
   
 const Example2 = () => {  
-  const [startDate, setStartDate] = useState(new Date());  
+  const [startDate, setStartDate] = useState(null);  
   return (  
-    <div className="flex">
+    <div className="flex space-x-5">
+      <div className="">
+        <DatePicker placeholderText='Date' selected={startDate} onChange={date => setStartDate(date)} minDate={new Date()} isClearable filterDate={date=>date.getDay()!=6 && date.getDay()!=0}/>  
+      </div>
 
-        <DatePicker  placeholder='Date' selected={startDate} onChange={date => setStartDate(date)} minDate={new Date()} isClearable filterDate={date=>date.getDay()!=6 && date.getDay()!=0}/>  
         <input type="text" placeholder="Hi" />
         <input type="text" placeholder="Hello" />
     </div>

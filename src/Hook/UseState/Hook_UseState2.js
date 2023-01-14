@@ -14,9 +14,9 @@ export default function Hook_UseState2() {
   return (
     <div className='text-center'>
         <h1 className='btn'>Count : {count}</h1>
-        <button className='arabic ' onClick={()=> setCount(count+1)}>Increse</button>
-        <button className='arabic ' onClick={()=>setCount(count-1)} disabled={count===0?true:false}>Increse</button>
-        <button className='arabic ' onClick={()=>setCount(0)}>Reset</button>
+        <button className=' ' onClick={()=> setCount(count+1)} disabled={count===60?true:false}>Increse</button>
+        <button className='' onClick={()=>setCount(count-1)} disabled={count===0?true:false}>Increse</button>
+        <button className=' ' onClick={()=>setCount(0)}>Reset</button>
     </div>
   )
 }

@@ -15,6 +15,7 @@ import BG2 from './component/BG2';
 import Onchange from './component/Onchange';
 import Example from './Hook/UseState/Picker2';
 import Example2 from './Hook/UseState/Picker3';
+import Image1 from './component/Image';
 
 
 
@@ -34,7 +35,7 @@ function App() {
         </Route>
       </Routes> */}
 
-      {/* <BG/> */}
+      <BG/>
       {/* <Jokes/> */}
       {/* <Form/> */}
       {/* <Responsive/> */}
@@ -43,7 +44,9 @@ function App() {
       {/* <BG2/>       */}
       {/* <Onchange/> */}
       {/* <Example/> */}
-      <Example2/>
+      {/* <Example2/> */}
+      {/* <Form/> */}
+      {/* <Image1/> */}
       
 
     </div>
